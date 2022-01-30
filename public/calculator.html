@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+    <link rel="stylesheet" href="/stylesheets/calculator.css">
+    <script src="/scripts/calculator.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Grade Calculator</h1>
+        <form id="calculator">
+            <h2>Activities</h2>
+            <p>Give grades to the numeric activities:</p>
+            <table id="activity-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Short Name</th>
+                        <th>Weight</th>
+                        <th>Grade</th>
+                        <th>Percent</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Activity 1</td>
+                        <td>A1</td>
+                        <td class="input"><input type="text" name="weight"></td>
+                        <td class="input grade"><input type="text" name="score"> / <input type="text" name="total"></td>
+                        <td class="percentage"></td>
+                    </tr>
+                    <tr>
+                        <td>Activity 2</td>
+                        <td>A2</td>
+                        <td class="input"><input type="text" name="weight"></td>
+                        <td class="input grade"><input type="text" name="score"> / <input type="text" name="total"></td>
+                        <td class="percentage"></td>
+                    </tr>
+                    <tr>
+                        <td>Activity 3</td>
+                        <td>A3</td>
+                        <td class="input"><input type="text" name="weight"></td>
+                        <td class="input grade"><input type="text" name="score"> / <input type="text" name="total"></td>
+                        <td class="percentage"></td>
+                    </tr>
+                    <tr>
+                        <td>Activity 4</td>
+                        <td>A4</td>
+                        <td class="input"><input type="text" name="weight"></td>
+                        <td class="input grade"><input type="text" name="score"> / <input type="text" name="total"></td>
+                        <td class="percentage"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="button" id="add-activity">ADD ACTIVITY</button>
+            <h2>Result</h2>
+            <p id="result"></p>
+            <section class="right">
+                <button type="button" id="weight">WEIGHTED</button>
+                <button type="button" id="mean">MEAN</button>
+            </section>
+        </form>
+    </main>
+
+</body>
+</html>
