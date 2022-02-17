@@ -1,0 +1,28 @@
+main {
+    padding: 20px;
+    font-family: sans-serif;
+}
+#image {
+    padding: 40px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+table {
+    border: thin solid black;
+    border-collapse: collapse;
+    text-align: left;
+}
+th, td {
+    border: thin solid black;
+    padding: 10px 30px 10px 10px;
+}
+button {
+    width: 140px;
+    height: 40px;
+    background-color: #CC0633;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-top: 20px;
+}

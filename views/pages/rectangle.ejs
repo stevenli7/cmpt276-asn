@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title><%= results[0]?.name %></title>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/rectangle.css"/>
+  <script src="/scripts/rectangle.js" defer></script>
+</head>
+<body>
+  <main>
+    <div id="image">
+      <%- results[0]?.name %>
+    </div>
+    <form action="/updateRectangle/<%= results[0]?.id %>" id="information" method="post">
+      <table>
+        <tr>
+          <td>
+            Name
+          </td>
+          <td>
+            <input type="text" id="rectangle-name" name="name" value="<%= results[0]?.name %>" required>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Width
+          </td>
+          <td>
+            <input type="number" name="width" value="<%= results[0]?.width %>" required>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Height
+          </td>
+          <td>
+            <input type="number" name="height" value="<%= results[0]?.height %>" required>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Color
+          </td>
+          <td>
+            <input type="text" id="color" name="color" value="<%= results[0]?.color %>" required>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            IQ
+          </td>
+          <td>
+            <input type="number" name="iq" value="<%= results[0]?.iq %>" required>
+          </td>
+        </tr>
+      </table>
+      <button type="submit" id="update" name="button" value="update">UPDATE</button>
+      <button type="submit" id="delete" name="button" value="delete">DELETE</button>
+    </form>
+</main>
+</body>
+</html>

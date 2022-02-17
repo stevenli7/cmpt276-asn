@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Rectangle Database</title>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/database.css"/>
+</head>
+
+<body>
+  <main>
+  <h2>Rectangles</h2>
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th>Name</th>
+        <th>Color</th>
+      </tr>
+    </thead>
+    <% results.forEach(function(r) { %>
+    <form action="/rectangle/<%= r.id %>" method="post">
+    <tbody>
+      <tr>
+        <td>
+          <%= results.indexOf(r) + 1 %>
+        </td>
+        <td>
+          <input type="submit" name="name" value="<%= r.name %>">
+        </td>
+        <td>
+          <%= r.color %>
+        </td>
+      </tr>
+    </tbody>
+    </form>
+    <% }); %>
+  </table>
+  <form action="/rectangle" method="post">
+    <button type="submit" name="add">ADD RECTANGLE</button>
+  </form>
+</main>
+</body>
+</html>

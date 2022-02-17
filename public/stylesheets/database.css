@@ -1,0 +1,11 @@
+@import 'rectangle.css';
+
+form h2 {
+    font-size: large;
+}
+td input {
+    background-color: white;
+    border: none;
+    color: blue;
+    text-decoration: underline;
+}
