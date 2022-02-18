@@ -26,7 +26,7 @@
             Width
           </td>
           <td>
-            <input type="number" name="width" value="<%= results[0]?.width %>" required>
+            <input type="number" name="width" min="1" value="<%= results[0]?.width %>" required>
           </td>
         </tr>
         <tr>
@@ -34,7 +34,7 @@
             Height
           </td>
           <td>
-            <input type="number" name="height" value="<%= results[0]?.height %>" required>
+            <input type="number" name="height" min="1" value="<%= results[0]?.height %>" required>
           </td>
         </tr>
         <tr>
@@ -50,7 +50,7 @@
             IQ
           </td>
           <td>
-            <input type="number" name="iq" value="<%= results[0]?.iq %>" required>
+            <input type="number" name="iq" min="1" value="<%= results[0]?.iq %>" required>
           </td>
         </tr>
       </table>

@@ -24,9 +24,6 @@ function updateValue(e) {
         if (isNaN(e.target.valueAsNumber)) {
             alert("Please enter a number.")
             e.target.value = e.target.defaultValue
-        } else if (e.target.value <= 0) {
-            alert("Value must be greater than 0");
-            e.target.value = e.target.defaultValue
         } else if (e.target.name == "width") {
             rectangle.style.setProperty("width", `${e.target.value}px`)
         } else if (e.target.name == "height") {
